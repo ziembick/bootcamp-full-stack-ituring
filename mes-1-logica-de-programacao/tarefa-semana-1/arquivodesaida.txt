@@ -1,0 +1,6 @@
+## O que é programação?
+- Programação é a espinha dorsal de praticamente qualquer produto, serviço ou empresa de tecnologia. Praticamente toda inovação no mundo tem programação no meio.
+- Existem vários títulos para quem trabalha com programação, mas no final todo mundo é programador.
+- Programar é instruir o computador o que queremos que ele faça. Para isso, usamos uma linguagem de programação.
+- Escrevemos instruções/comandos (código) seguindo as regras de sintaxe de uma linguagem de programação. Em seguida, convertemos este código que conseguimos ler em código que o computador consegue processar e executar por meio de um compilador/interpretador.
+- Em programação, vamos precisar muitas vezes interagir com o sistema operacional por meio de comandos de texto. O Terminal tem esse propósito.
