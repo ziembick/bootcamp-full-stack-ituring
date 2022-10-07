@@ -2,7 +2,7 @@ const nome = "Paulo Ziembick";
 const email = "pauloziembick@gmail.com";
 const profissao = "Programador";
 const idade = 27;
-const lugarSonhoDeConhecer = "Algum lugar da Europa"
+const lugarSonhoDeConhecer = "Inglaterra"
 
 console.log(typeof(nome))
 console.log(typeof(email))
