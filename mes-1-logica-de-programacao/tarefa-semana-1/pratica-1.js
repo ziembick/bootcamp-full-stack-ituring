@@ -4,8 +4,8 @@ const profissao = "Programador";
 const idade = 27;
 const lugarSonhoDeConhecer = "Algum lugar da Europa"
 
-console.log(nome)
-console.log(email)
-console.log(profissao)
-console.log(idade)
-console.log(lugarSonhoDeConhecer)
+console.log(typeof(nome))
+console.log(typeof(email))
+console.log(typeof(profissao))
+console.log(typeof(idade))
+console.log(typeof(lugarSonhoDeConhecer))
