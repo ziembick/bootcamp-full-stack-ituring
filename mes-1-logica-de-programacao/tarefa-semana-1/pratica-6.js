@@ -9,7 +9,7 @@ let numero8 = 8
 let numero9 = 9
 let numero10 = 10
 
-let tabuada = 123
+const tabuada = 123
 
 numero1 = numero1 * tabuada
 numero2 = numero2 * tabuada
