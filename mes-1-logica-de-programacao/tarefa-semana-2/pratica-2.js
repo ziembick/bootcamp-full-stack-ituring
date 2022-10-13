@@ -10,3 +10,9 @@ function entregaProduto (produto, endereco, recebimento) {
 }
 
 entregaProduto("iPhone", "Av. Damasceno Vieira, 1080", "Paulo")
+
+function enviouEmail (email) {
+    console.log(`Atenciosamente, \n${email}.`)
+}
+
+enviouEmail("Roberto")
