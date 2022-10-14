@@ -1,7 +1,7 @@
 const numero = 8
-const ehPar = numero % 2 == 0;
+const parOuImpar = numero % 2 == 0;
 
-if (ehPar) {
+if (parOuImpar) {
     console.log(`O número ${numero} é par.`)
 } else {
     console.log(`O número ${numero} é ímpar.`)
