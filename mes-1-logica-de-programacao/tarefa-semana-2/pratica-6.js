@@ -1,0 +1,4 @@
+const obterAnoAtual = () => {
+    //statements
+}
+
