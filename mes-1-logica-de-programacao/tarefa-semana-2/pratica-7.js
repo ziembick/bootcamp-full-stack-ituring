@@ -1,5 +1,5 @@
 function obterLinguagem (lang) {
-    if(lang === "es") {
+    if (lang === "es") {
         console.log("Hola Mundo!")
     } else if (lang === "en") {
         console.log("Hello World!")
