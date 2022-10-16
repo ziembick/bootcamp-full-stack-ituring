@@ -5,13 +5,13 @@ function obterNumero (numero){
     const numero2 = 20
     const numero3 = 30
     
-    if(numero == numero1) {
+    if(numero === numero1) {
         console.log(numero3)
-    } else if (numero == numero2) {
+    } else if (numero === numero2) {
         console.log(numero3)
-    } else if (numero == numero3) {
+    } else if (numero === numero3) {
         console.log(numero3)
-    } else if (numero == numero1 && numero == numero2 && numero == numero3) {
+    } else if (numero === numero1 && numero === numero2 && numero === numero3) {
         console.log(numero1 || numero2 || numero3)
     }
 }
