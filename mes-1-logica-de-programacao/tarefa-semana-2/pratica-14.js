@@ -1,6 +1,6 @@
 function obterImc (imc) {
     const peso = 90
-    const altura = 1.90
+    const altura = 1.83
     imc = peso / (altura * altura)
 
     if (imc < 18.5) {
@@ -11,7 +11,8 @@ function obterImc (imc) {
         console.log("Sobrepreso") 
     } else if (imc > 30) {
         console.log("Obesidade")
-    }   
+    } 
+    console.log(imc)
 }
 
 obterImc()
