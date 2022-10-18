@@ -1,8 +1,19 @@
-export function obterImc (imc) {
-    const peso = 90
-    const altura = 1.83
-    imc = peso / altura ** 2   
+const calcularImc = (peso, altura) => peso / (altura * altura)
+
+function classificarImc(imc) {
+    if (imc < 18.5) 
+        return "Abaixo do Peso"
+    if (imc < 25)
+        return "Peso Normal"
+    if (imc < 30)
+        return "Sobrepeso"
+
+    return "Obesidade"
+}   
+
+function checarImc (peso, altura) {
+    const imc = calcularImc (peso, altura)
+    console.log(classificarImc(imc))
 }
 
-obterImc()
-
+checarImc(70, 1.70)

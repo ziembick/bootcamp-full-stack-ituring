@@ -1,22 +1,32 @@
-// import { obterImc } from "./pratica-15"
-// cannot use import statement outside a module
-
-function obterImc (imc) {
-    const peso = 90
-    const altura = 1.83
-    imc = peso / altura ** 2
+function obterImc(peso, altura){
+    const imc = peso / (altura * altura)
+    let classificarImc
 
     if (imc < 18.5) {
-        console.log("Abaixo do Peso")
-    } else if (imc >= 18.5 && imc <= 25) {
-        console.log("Peso Normal")
-    } else if (imc >= 25 && imc <= 30) {
-        console.log("Sobrepreso") 
-    } else if (imc > 30) {
-        console.log("Obesidade")
-    } 
+        classificarImc = "Abaixo do Peso"
+    } else if (imc < 25) {
+        classificarImc = "Peso Normal"
+    } else if (imc < 30) {
+        classificarImc = "Sobrepeso"
+    } else {
+        classificarImc = "Obesidade"
+    }
+    return classificarImc
 }
 
-obterImc()
+console.log(obterImc(70,1.70))
 
+function obterImc2 (peso, altura) {
+    const imc = peso / (altura * altura)
 
+    if (imc < 18.5)
+        return "Abaixo do Peso"
+    if (imc < 25)
+        return "Peso Normal"
+    if (imc < 30)
+        return "Sobrepeso"
+
+    return "Obesidade"
+}
+
+console.log(obterImc2(70, 1.80))
