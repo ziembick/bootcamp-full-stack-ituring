@@ -1,4 +1,5 @@
 // import { obterImc } from "./pratica-15"
+// cannot use import statement outside a module
 
 function obterImc (imc) {
     const peso = 90
