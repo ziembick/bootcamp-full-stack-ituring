@@ -1,5 +1,3 @@
-//não sei como fazer pra funcionar pra passar números iguais e exibir qualquer um dos numeros
-
 function obterNumero (numero){
     const numero1 = 10
     const numero2 = 20
