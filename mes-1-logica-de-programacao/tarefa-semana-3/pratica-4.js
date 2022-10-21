@@ -1,6 +1,6 @@
 function exibirLista (lista) {
     for(let [indice, valor] of lista.entries()){
-        console.log(`${indice} ${valor} `)
+        console.log(`[${indice}] ${valor} `)
     }
 }
 
