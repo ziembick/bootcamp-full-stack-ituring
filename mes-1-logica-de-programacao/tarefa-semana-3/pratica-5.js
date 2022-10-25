@@ -1,20 +1,22 @@
-function pesquisarSerie(lista) {
-    let seriesEncontradas = []
-    let i = 0
+function exibirSeriados (lista, termoDeBusca)  {
+    let seriesEncontradas = []; 
+    let i = 0;
 
-    while (i < lista.length){
-        if (lista[i].includes("Dexter")){
-            seriesEncontradas.push(lista[i])
+    while (i < lista.length) {
+        if (lista[i].includes(termoDeBusca)){ 
+            seriesEncontradas.push(lista[i]) 
+            return i 
         }
-        i++
+            i++; 
+
+        } if (i != lista.length)
+            return "undefined"
+
     }
-    return seriesEncontradas
-}
-
-const lista =  ["Breaking Bad", "Game of Thrones", "Stranger Things", "Chernobyl", "Dexter", "The Last Dance", "This is Us"]
 
 
+    const lista = ["Breaking Bad", "Game of Thrones", "Stranger Things", "Chernobyl", "Dexter", "The Last Dance", "This is Us"];
+   
+    const termoDeBusca = "Dexter";
 
-let seriesEncontradas = pesquisarSerie(lista)
-
-console.log(seriesEncontradas)
+    console.log(exibirSeriados(lista, termoDeBusca));
