@@ -1,4 +1,4 @@
-function exibirImparesde1a17 (n) {
+/*function exibirImparesde1a17 (n) {
     let i = 1
 
     while (i <= n ) {
@@ -14,4 +14,13 @@ function exibirImparesde1a17 (n) {
     }
 }
 
-exibirImparesde1a17(17)
+exibirImparesde1a17(17)*/
+
+let imparesDe1AteN = n => {
+    for (let i = 1; i <= n; i +=2)
+        console.log(i)
+}
+
+imparesDe1AteN(17)
+
+
