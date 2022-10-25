@@ -18,5 +18,8 @@ function exibirSeriados (lista, termoDeBusca)  {
     const lista = ["Breaking Bad", "Game of Thrones", "Stranger Things", "Chernobyl", "Dexter", "The Last Dance", "This is Us"];
    
     const termoDeBusca = "Dexter";
+    //const termoDeBusca = "Friends"
 
     console.log(exibirSeriados(lista, termoDeBusca));
+    
+
