@@ -3,14 +3,14 @@ function quantidadePositivos(numeros) {
   }
   
   let lista4 = quantidadePositivos([100, -20, -30, 10, -7, -21, -5]);
-  console.log(`Total de depósitos ${lista4}`);
+  console.log(`Total de depósitos: ${lista4}`);
 
   function quantidadeNegativos(numeros) {
     return numeros.filter(nr => nr <= 0).length;
   }
   
   let lista5 = quantidadeNegativos([100, -20, -30, 10, -7, -21, -5]);
-  console.log(`Total de retiradas ${lista5}`);
+  console.log(`Total de retiradas: ${lista5}`);
 
   function somar(lista) {
     let total = 0;
