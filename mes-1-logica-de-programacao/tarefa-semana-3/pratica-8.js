@@ -20,7 +20,7 @@ function somar2(lista2) {
     return total;
 }
 let lista2 = [100, -20, -30, 10, -7, -21, -5];
-console.log(`O valor total retirado foi de R$: ${somar2(lista2)}`);
+console.log(`O valor total retirado foi de R$:${somar2(lista2)}`);
 
 //
 let numeros = [100, -20, -30, 10, -7, -21, -5]
