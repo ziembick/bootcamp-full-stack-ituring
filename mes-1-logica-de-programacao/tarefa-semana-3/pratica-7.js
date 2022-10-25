@@ -1,9 +1,7 @@
-function listaDeDepositos (lista) {
-    let i = 0;
+let numeros = [100, -20, -30, 10, -7, -21, -5]
 
-    while (i < lista.length) {
-        
-    }
-}
+let soma = numeros.reduce(function(acumulador,valor) {
+    return  acumulador + valor;
+})
 
-let lista = [100, -20, -30, 10, -7, -21, -5]
+console.log(`O saldo final de sua conta foi positivo no valor de R$${soma}`)
