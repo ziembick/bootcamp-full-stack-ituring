@@ -11,3 +11,4 @@ function buscaSeriado(listaSeriados, seriado) {
   }
 
 console.log(buscaSeriado(listaSeriados,"Dexter"))
+console.log(buscaSeriado(listaSeriados,"Friends"))
