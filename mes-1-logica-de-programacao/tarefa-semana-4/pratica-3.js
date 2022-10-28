@@ -1,19 +1,16 @@
-function pesquisarSerie(lista, termoDeBuscah) {
-    let seriesEncontradas = []
+function pesquisarSerie(lista, termoDeBusca) {
+    const novaLista = lista.filter(function(item){
+        return item.includes(termoDeBusca)
+    })
 
-    for (let i = 0; i <lista.length;i++){
-        if  (lista[i].includes(termoDeBuscah)){
-            seriesEncontradas.push(lista[i])
-        }
-    }
-    return seriesEncontradas
+    return novaLista
 }
 
 const lista =  ["Breaking Bad", "Game of Thrones", "Stranger Things", "Chernobyl", "Dexter", "The Last Dance", "This is Us"]
 
-const termoDeBuscah = "Th"
+const termoDeBusca = "Th"
 
-let seriesEncontradas = pesquisarSerie(lista, termoDeBuscah)
+let seriesEncontradas = pesquisarSerie(lista, termoDeBusca)
 
 console.log(seriesEncontradas)
 
