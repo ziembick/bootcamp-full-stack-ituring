@@ -1,9 +1,11 @@
-const numbers = [4, 9, 7, 1, 8, 12]
-
-function compareFunction(a, b) {
+function ordenarNumeros(a, b) {
     return a - b;
 }
 
-numbers.sort(compareFunction)
+const numbers = [4, 9, 7, 1, 8, 12]
+
+let numerosOrdenados = numbers.sort(ordenarNumeros)
 
 console.log(numbers)
+/////////////////////////////
+
