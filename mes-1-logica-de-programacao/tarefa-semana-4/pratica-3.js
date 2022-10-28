@@ -1,5 +1,5 @@
-function pesquisarSerie(lista, termoDeBusca) {
-    const novaLista = lista.filter(function(item){
+const pesquisarSerie = (lista, termoDeBusca) => {
+    const novaLista = lista.filter((item) => {
         return item.includes(termoDeBusca)
     })
 
@@ -17,7 +17,7 @@ console.log(seriesEncontradas)
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 const seriados = ["Breaking Bad", "Game of Thrones", "Stranger Things", "Chernobyl", "Dexter", "The Last Dance", "This is Us"]
 
-const filtrados = seriados.filter(function(itens){
+const filtrados = seriados.filter((itens) => {
     return itens.includes("Th")
 })
 
