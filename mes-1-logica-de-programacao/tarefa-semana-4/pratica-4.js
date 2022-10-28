@@ -13,4 +13,3 @@ let listaRaizQuadrada = numbers.map(item => (Math.sqrt(item)))
 
 console.log(listaRaizQuadrada)
 ///////////////////////////////////////
-
