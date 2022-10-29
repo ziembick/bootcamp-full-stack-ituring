@@ -1,5 +1,5 @@
-const informacoesFilme = (filme) => {
-    console.log(`O filme ${filme.titulo} que estreou em ${filme.anoPublicacao} tem avaliação ${filme.notaAvaliacao} pelo IMDb.`)
+const informacoesFilme = (f) => {
+    console.log(`O filme ${f.titulo} que estreou em ${f.anoPublicacao} tem avaliação ${f.notaAvaliacao} pelo IMDb.`)
 }
 
 let f = {
