@@ -1,4 +1,8 @@
-let filme = {
+const informacoesFilme = (filme) => {
+    console.log(`O filme ${filme.titulo} que estreou em ${filme.anoPublicacao} tem avaliação ${filme.notaAvaliacao} pelo IMDb.`)
+}
+
+let f = {
     titulo: "Estrelas Além do Tempo",
     notaAvaliacao: 7.8,
     duracao: 127,
@@ -6,8 +10,8 @@ let filme = {
     categoria: "Drama"
 }
 
-console.log(`O filme ${filme.titulo} que estreou em ${filme.anoPublicacao} tem avaliação ${filme.notaAvaliacao}pelo IMDb.`)
-///////////////////////////////////////////////////////////////
+informacoesFilme(f)
+
 
 
 
