@@ -6,7 +6,7 @@ let lista = {
     genero: ["Biografia", "Drama", "História"]
 }
 
-  console.log(`${lista.titulo} (Nota: ${lista.notaAvaliacao})\n• Duração: ${lista.duracao} minutos\n• Ano de publicação: ${lista.anoPublicacao}• Gênero: ${lista.genero}`)
+  console.log(`${lista.titulo} (Nota: ${lista.notaAvaliacao})\n• Duração: ${lista.duracao} minutos\n• Ano de publicação: ${lista.anoPublicacao}\n• Gênero: ${lista.genero}`)
 
 /*
   Estrelas Além do Tempo (Nota: 7.8)
