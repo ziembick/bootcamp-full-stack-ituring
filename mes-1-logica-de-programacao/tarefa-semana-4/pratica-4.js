@@ -1,16 +1,9 @@
+/*solução*/
 const obterRaizQuadradaCurta = (numbers) => {
     return numbers.map(item => (Math.sqrt(item)))
 }
 
 console.log(obterRaizQuadradaCurta([4, 9, 16, 25, 36, 49]))
-
-
-
-
-
-
-
-
 
 //////////////////////////////////////////////////
 const obterRaizQuadrada = (numbers) => {
