@@ -21,15 +21,16 @@ let listaFilmes = [{
 }]
 
 
-listaFilmes.forEach(function(item){
-  console.log(`${item.titulo} (Nota: ${item.notaAvaliacao})
-  • Duração: ${item.duracao} minutos
-  • Ano de publicação: ${item.anoPublicacao}
-  • Gênero: ${item.genero}`)
-})
+const obterFilmes = (listaFilmes) => {
+  listaFilmes.forEach(function(item){
+    console.log(`${item.titulo} (Nota: ${item.notaAvaliacao})
+    • Duração: ${item.duracao} minutos
+    • Ano de publicação: ${item.anoPublicacao}
+    • Gênero: ${item.genero}`)
+  })
+}
 
-
-
+obterFilmes(listaFilmes)
 
 
 
