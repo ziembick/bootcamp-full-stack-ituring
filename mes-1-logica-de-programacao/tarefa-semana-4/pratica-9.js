@@ -20,14 +20,38 @@ let listaFilmes = [{
     genero: ["Biografia", "Drama", "Suspense", "Guerra"]
   }]
 
-const obterFilmeAvaliado = (listaFilmes) => { 
-    let novaLista = listaFilmes.filter(function(item) {
-        if (item.notaAvaliacao > item.notaAvaliacao[0])
-        return novaLista
+const obterFilmes = (listaFilmes) => {
+    listaFilmes.filter(function(item){
+        let maiorNumero = 0
+        for (let i = 0; i < item.notaAvaliacao.lenght; i++) {
+            let notas = item.notaAvaliacao[i]
+
+            if (notas > maiorNumero){
+                maiorNumero = notas
+            }
+        }
     })
-   console.log(novaLista)
 }
+  
+  console.log(obterFilmes(listaFilmes))
+  
+  /*let listaExemplo2 = [1, 5, 2]
+  let novaLista2 = listaExemplo.filter(function(item) {
+      const ehImpar = item % 2 == 1
+      return ehImpar
+  })
+  
+  console.log(novaLista2)
+  
 
-obterFilmeAvaliado(listaFilmes)
 
+let maiorNumero = 0
+
+for (let i = 0; i < notaAvaliacao.length; i++) {
+    let notas = notaAvaliacao[i]
+    
+    if (notas > maiorNumero){
+        maiorNumero = notas;
+    }
+}*/
 
