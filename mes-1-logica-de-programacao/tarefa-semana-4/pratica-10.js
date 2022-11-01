@@ -1,4 +1,5 @@
-let lista = [{
+let l = [
+  {
     valor: 100.00,
     movimentacao: "deposito",
     dataMovimentacao: "2021-08-02T07:46:36.611Z"
@@ -32,21 +33,25 @@ let lista = [{
     valor: 5.00,
     movimentacao: "retirada",
     dataMovimentacao: "2022-06-08T09:46:36.611Z"
-  }]
+  }
+]
 
 
-let saldoDeConta = function (lista) {
-    lista.forEach(item => {
-        let deposito = 0
-        let retirada = 0
-        
-            if(item.movimentacao == "deposito"){
-                console.log(deposito += item.valor);
-            }
-            if(item.movimentacao == "retirada"){
-                console.log(retirada =+ item.valor)
-            }
-    })
+
+const saldoLista = (lista) => {
+  let saldoFinal = 0;
+  lista.forEach(function(item){
+    if (item.movimentacao === "deposito")
+        saldoFinal += item.valor
+    else if (item.movimentacao === "retirada")
+        saldoFinal -= item.valor
+  })
+
+  let positivoOuNegativo = "negativo"
+  if (saldoFinal >= 0)
+    positivoOuNegativo = "positivo"
+
+  console.log(`O saldo final de sua conta foi ${positivoOuNegativo} no valor de R$ ${saldoFinal}.`)
 }
 
-saldoDeConta(lista)
+saldoLista(l)
