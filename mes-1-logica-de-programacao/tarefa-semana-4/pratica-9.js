@@ -21,52 +21,13 @@ let listaFilmes = [{
 }]
 
 
-const obterNota = (listaFilmes) => {
-  listaFilmes.filter(function(item){
-    console.log(Math.max(item.notaAvaliacao))
+function classificar (listaFilmes) {
+  listaFilmes.sort(function(a,b){
+    return b.notaAvaliacao - a.notaAvaliacao
   })
-  
+
+  console.log(`O filme de melhor avaliação com nota ${listaFilmes[0].notaAvaliacao} é ${listaFilmes[0].titulo}`)
 }
-obterNota(listaFilmes)
 
-let idade = [18, 42, 12, 15, 20];
-
-console.log(Math.max(...idade))
-
-
-
-/*const obterFilmes = (listaFilmes) => {
-    listaFilmes.filter(function(item){
-        let maiorNumero = 0
-        for (let i = 0; i < item.notaAvaliacao.lenght; i++) {
-            let notas = item.notaAvaliacao[i]
-
-            if (notas > maiorNumero){
-                maiorNumero = notas
-            }
-        }
-    })
-}
-  
-  console.log(obterFilmes(listaFilmes))
-  
-let listaExemplo2 = [1, 5, 2]
-  let novaLista2 = listaExemplo.filter(function(item) {
-      const ehImpar = item % 2 == 1
-      return ehImpar
-  })
-  
-  console.log(novaLista2)
-  
-
-
-let maiorNumero = 0
-
-for (let i = 0; i < notaAvaliacao.length; i++) {
-    let notas = notaAvaliacao[i]
-    
-    if (notas > maiorNumero){
-        maiorNumero = notas;
-    }
-}*/
+classificar(listaFilmes)
 
