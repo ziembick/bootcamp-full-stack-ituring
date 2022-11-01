@@ -47,9 +47,13 @@ const saldoLista = (lista) => {
         saldoFinal -= item.valor
   })
 
+
+
   let positivoOuNegativo = "negativo"
   if (saldoFinal >= 0)
     positivoOuNegativo = "positivo"
+
+  saldoFinal = Math.abs(saldoFinal)
 
   console.log(`O saldo final de sua conta foi ${positivoOuNegativo} no valor de R$ ${saldoFinal}.`)
 }
