@@ -33,3 +33,20 @@ let lista = [{
     movimentacao: "retirada",
     dataMovimentacao: "2022-06-08T09:46:36.611Z"
   }]
+
+
+let saldoDeConta = function (lista) {
+    lista.forEach(item => {
+        let deposito = 0
+        let retirada = 0
+        
+            if(item.movimentacao == "deposito"){
+                console.log(deposito += item.valor);
+            }
+            if(item.movimentacao == "retirada"){
+                console.log(retirada =+ item.valor)
+            }
+    })
+}
+
+saldoDeConta(lista)
