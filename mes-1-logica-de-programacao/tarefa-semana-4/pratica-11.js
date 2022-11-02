@@ -43,21 +43,17 @@ let l = [
     let totalDeposito = 0;
     let totalRetirada = 0;
 
+ 
     lista.forEach(function(item){
         if (item.movimentacao === "deposito")
-        totalDeposito += item.valor
-    })
-
-    lista.forEach(function(item){
+            totalDeposito += item.valor
         if (item.movimentacao === "retirada")
             totalRetirada += item.valor
-    })
-
-    lista.forEach(function(item){
-      if (item.movimentacao === "deposito")
-          saldoFinal += item.valor
-      else if (item.movimentacao === "retirada")
-          saldoFinal -= item.valor
+        if (item.movimentacao === "deposito")
+            saldoFinal += item.valor
+        else if (item.movimentacao === "retirada")
+            saldoFinal -= item.valor
+        
     })
   
   
@@ -74,4 +70,3 @@ let l = [
   }
   
   saldoLista(l)
-  
