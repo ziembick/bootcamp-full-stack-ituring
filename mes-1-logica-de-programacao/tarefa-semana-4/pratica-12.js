@@ -62,8 +62,6 @@ let l = [
         
     })
   
-  
-  
     let positivoOuNegativo = "negativo"
     if (saldoFinal >= 0)
       positivoOuNegativo = "positivo"
