@@ -47,6 +47,34 @@ let l = [
 
  
     lista.forEach(function(item){
+      if (item.movimentacao === "deposito")
+       totalDeposito += item.valor
+     else totalRetirada -= item.valor
+      if (item.movimentacao === "deposito")
+        qtdDepositos += 1
+      else qtdRetiradas += 1
+       
+   });
+ 
+ saldoFinal = totalDeposito + totalRetirada
+ 
+   let positivoOuNegativo = "negativo"
+   if (saldoFinal >= 0)
+     positivoOuNegativo = "positivo"
+ 
+   saldoFinal = Math.abs(saldoFinal)
+   
+   console.log(`Total de depósitos: ${qtdDepositos}`)
+   console.log(`Total de retiradas: ${qtdRetiradas}`)
+   console.log(`O valor total depositado foi de: R$ ${totalDeposito}`)
+   console.log(`O valor total retirado foi de: R$ ${totalDeposito - saldoFinal}`)
+   console.log(`O saldo final de sua conta foi ${positivoOuNegativo} no valor de R$ ${saldoFinal}.`)
+ }
+  
+  saldoLista(l)
+
+  ////////////////////////////////////////
+  /*  lista.forEach(function(item){
         if (item.movimentacao === "deposito")
             qtdDepositos += 1
         if (item.movimentacao === "retirada")
@@ -60,19 +88,4 @@ let l = [
         else if (item.movimentacao === "retirada")
             saldoFinal -= item.valor
         
-    })
-  
-    let positivoOuNegativo = "negativo"
-    if (saldoFinal >= 0)
-      positivoOuNegativo = "positivo"
-  
-    saldoFinal = Math.abs(saldoFinal)
-    
-    console.log(`Total de depósitos: ${qtdDepositos}`)
-    console.log(`Total de retiradas: ${qtdRetiradas}`)
-    console.log(`O valor total depositado foi de: R$ ${totalDeposito}`)
-    console.log(`O valor total retirado foi de: R$ ${totalRetirada}`)
-    console.log(`O saldo final de sua conta foi ${positivoOuNegativo} no valor de R$ ${saldoFinal}.`)
-  }
-  
-  saldoLista(l)
+    })*/
