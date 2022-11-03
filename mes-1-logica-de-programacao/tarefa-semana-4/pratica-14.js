@@ -25,16 +25,8 @@ let lista = {
     ]
   }
 
-
-
-const obterMedia = (media) => {
-    media.forEach(function(item){
-        
-    })
-}
-
 //////////////////////////////////////////////////////
- const notasAlunos = [
+/* const notasAlunos = [
     
     { cliente: "Thais S", nota: 9.8 },
     { cliente: "Thales Gonçalves",  nota: 8.9 },
@@ -59,4 +51,4 @@ const obterMedia = (media) => {
    
    const medias = [].map.call(acum, i => ({cliente: i.cliente, media: i.soma / i.notas}))
    
-   console.log(medias)
+   console.log(medias)*/
