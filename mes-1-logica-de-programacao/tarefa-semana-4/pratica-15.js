@@ -37,13 +37,13 @@ let l = [
 ]
 
 function menorTempo (teste) {
-    teste.sort(function(a,b){
-      return a.tempoEstimado - b.tempoEstimado
-    })
+  teste.sort(function(a,b){
+    return a.tempoEstimado - b.tempoEstimado
+})
   
-    console.log(`${teste[0].motorista} está a caminho com o carro ${teste[0].veiculo} de placa ${teste[0].placa}. Chega em ${teste[0].tempoEstimado}`)
+console.log(`${teste[0].motorista} está a caminho com o carro ${teste[0].veiculo} de placa ${teste[0].placa}. Chega em ${teste[0].tempoEstimado}`)
   
-  }
+}
   
 menorTempo(l)
   
