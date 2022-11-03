@@ -30,10 +30,9 @@ let mediaNota = function (notas)  {
   let i = 0;
     notas.avaliacoes.forEach(function(item) {
       soma += item.nota;
-      i++;
     })
 
-  media = soma / i;
+  media = soma / notas.avaliacoes.length;
   console.log(`A média de avaliações do restaurante Turing Gourmet foi de ${media.toFixed(2)}`);
 
 }
