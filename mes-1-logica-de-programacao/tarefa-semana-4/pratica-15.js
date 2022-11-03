@@ -36,12 +36,12 @@ let l = [
   }
 ]
 
-function menorTempo (teste) {
-  teste.sort(function(a,b){
+function menorTempo (mt) {
+  mt.sort(function(a,b){
     return a.tempoEstimado - b.tempoEstimado
 })
   
-console.log(`${teste[0].motorista} está a caminho com o carro ${teste[0].veiculo} de placa ${teste[0].placa}. Chega em ${teste[0].tempoEstimado}`)
+console.log(`${mt[0].motorista} está a caminho com o carro ${mt[0].veiculo} de placa ${mt[0].placa}. Chega em ${mt[0].tempoEstimado} minutos`)
   
 }
   
