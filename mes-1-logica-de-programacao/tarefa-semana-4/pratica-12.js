@@ -50,13 +50,13 @@ let l = [
       if (item.movimentacao === "deposito")
        totalDeposito += item.valor
      else totalRetirada -= item.valor
-      if (item.movimentacao === "deposito")
-        qtdDepositos += 1
-      else qtdRetiradas += 1
+      if (item.movimentacao === "retirada")
+        qtdRetiradas += 1
+      else qtdDepositos += 1
        
    });
  
- saldoFinal = totalDeposito + totalRetirada
+  saldoFinal = totalDeposito + totalRetirada
  
    let positivoOuNegativo = "negativo"
    if (saldoFinal >= 0)
