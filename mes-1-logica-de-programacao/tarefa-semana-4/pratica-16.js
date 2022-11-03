@@ -38,20 +38,3 @@ const termoDeBusca = "cachorro"
 let achouCachorro = pesquisarCachorro(lista,termoDeBusca)
 
 console.log(achouCachorro)
-
-/////////////////////////////////////////////////////////////////////
-/*const pesquisarSerie = (lista, termoDeBusca) => {
-  const novaLista = lista.filter((item) => {
-      return item.includes(termoDeBusca)
-  })
-
-  return novaLista
-}
-
-const lista =  ["Breaking Bad", "Game of Thrones", "Stranger Things", "Chernobyl", "Dexter", "The Last Dance", "This is Us"]
-
-const termoDeBusca = "Th"
-
-let seriesEncontradas = pesquisarSerie(lista, termoDeBusca)
-
-console.log(seriesEncontradas)*/
