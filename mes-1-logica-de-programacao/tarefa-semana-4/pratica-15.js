@@ -36,14 +36,14 @@ let l = [
   }
 ]
 
-function classificar (l) {
-    l.sort(function(a,b){
-      return b.tempoEstimado - a.tempoEstimado
+function menorTempo (teste) {
+    teste.sort(function(a,b){
+      return a.tempoEstimado - b.tempoEstimado
     })
   
-    console.log()
-    console.log(`O filme de melhor avaliação com nota ${l[0].avaliacao} é ${l[0].motorista}`)
+    console.log(`${teste[0].motorista} está a caminho com o carro ${teste[0].veiculo} de placa ${teste[0].placa}. Chega em ${teste[0].tempoEstimado}`)
+  
   }
   
-  classificar(l)
+menorTempo(l)
   
