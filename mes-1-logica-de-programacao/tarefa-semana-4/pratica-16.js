@@ -27,10 +27,10 @@ let lista = [
 ]
 
 const pesquisarCachorro = (lista, termoDeBusca) => {
-  const novaLista = lista.filter((item) => {
-    return item.tags.includes(termoDeBusca)
+    return  lista.filter((item) => {
+      return item.tags.includes(termoDeBusca)
   })
-  return novaLista
+  
 }
 
 const termoDeBusca = "cachorro"
