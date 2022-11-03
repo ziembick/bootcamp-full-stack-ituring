@@ -1,4 +1,4 @@
-let estabelecimento = {
+let l = {
   restaurante: "Turing Gourmet",
   tipo: "Comida britânica",
   avaliacoes: [
@@ -25,10 +25,10 @@ let estabelecimento = {
   ]
 }
 
-let mediaNota = function (estabelecimento)  {
+let mediaNota = function (notas)  {
   let soma = 0;
   let i = 0;
-estabelecimento.avaliacoes.forEach(function(item) {
+    notas.avaliacoes.forEach(function(item) {
       soma += item.nota;
       i++;
     })
@@ -36,8 +36,6 @@ estabelecimento.avaliacoes.forEach(function(item) {
   media = soma / i;
   console.log(`A média de avaliações do restaurante Turing Gourmet foi de ${media.toFixed(2)}`);
 
- }
+}
 
-
-
-mediaNota(estabelecimento);
+mediaNota(l);
