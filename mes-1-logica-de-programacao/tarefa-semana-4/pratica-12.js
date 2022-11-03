@@ -48,10 +48,10 @@ let l = [
  
     lista.forEach(function(item){
       if (item.movimentacao === "deposito")
-       totalDeposito += item.valor
+          totalDeposito += item.valor;
      else totalRetirada -= item.valor
       if (item.movimentacao === "retirada")
-        qtdRetiradas += 1
+          qtdRetiradas += 1
       else qtdDepositos += 1
        
    });
