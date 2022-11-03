@@ -1,4 +1,4 @@
-let l = [
+let lista = [
   {
     endereco: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2669&q=80",
     tags: ["cachorro"],
@@ -25,3 +25,33 @@ let l = [
     dataCriacao: "2022-06-10T09:46:36.611Z"
   }
 ]
+
+const pesquisarCachorro = (lista, termoDeBusca) => {
+  const novaLista = lista.filter((item) => {
+    return item.tags.includes(termoDeBusca)
+  })
+  return novaLista
+}
+
+const termoDeBusca = "cachorro"
+
+let achouCachorro = pesquisarCachorro(lista,termoDeBusca)
+
+console.log(achouCachorro)
+
+/////////////////////////////////////////////////////////////////////
+/*const pesquisarSerie = (lista, termoDeBusca) => {
+  const novaLista = lista.filter((item) => {
+      return item.includes(termoDeBusca)
+  })
+
+  return novaLista
+}
+
+const lista =  ["Breaking Bad", "Game of Thrones", "Stranger Things", "Chernobyl", "Dexter", "The Last Dance", "This is Us"]
+
+const termoDeBusca = "Th"
+
+let seriesEncontradas = pesquisarSerie(lista, termoDeBusca)
+
+console.log(seriesEncontradas)*/
