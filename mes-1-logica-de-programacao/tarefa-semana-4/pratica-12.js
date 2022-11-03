@@ -46,15 +46,15 @@ let l = [
     let qtdRetiradas = 0;
 
  
-    lista.forEach(function(item){
-      if (item.movimentacao === "deposito")
-          totalDeposito += item.valor;
-     else totalRetirada -= item.valor
-      if (item.movimentacao === "retirada")
-          qtdRetiradas += 1
-      else qtdDepositos += 1
-       
-   });
+    lista.forEach((item) => {
+      if (item.movimentacao === "deposito") {
+        totalDeposito += item.valor;
+        qtdDepositos++;
+      } else if (item.movimentacao === "retirada") {
+        totalRetirada -= item.valor;
+        qtdRetiradas++;
+      }
+    })
  
   saldoFinal = totalDeposito + totalRetirada
  
@@ -89,3 +89,13 @@ let l = [
             saldoFinal -= item.valor
         
     })*/
+
+    /*  lista.forEach(function(item){
+      if (item.movimentacao === "deposito")
+       totalDeposito += item.valor
+     else totalRetirada -= item.valor
+      if (item.movimentacao === "retirada")
+        qtdRetiradas += 1
+      else qtdDepositos += 1
+       
+   });*/
