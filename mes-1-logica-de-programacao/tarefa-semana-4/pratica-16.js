@@ -33,8 +33,9 @@ const pesquisarCachorro = (lista, termoDeBusca) => {
   
 }
 
-const termoDeBusca = "cachorro"
+console.log(pesquisarCachorro(lista,"cachorro"))
 
-let achouCachorro = pesquisarCachorro(lista,termoDeBusca)
 
-console.log(achouCachorro)
+/* let buscaFotos = (listaFotos, termo) => {
+    return listaFotos.filter ((item) => item.tags.includes(termo))
+}*/
