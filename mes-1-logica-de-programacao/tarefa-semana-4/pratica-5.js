@@ -1,3 +1,5 @@
+//SOLUÇÃO 
+
 const obterNumeros = (numeros) => {
     let numerosSort = numeros.sort((a,b) => a - b)
     return numerosSort

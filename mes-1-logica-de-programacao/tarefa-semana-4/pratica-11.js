@@ -45,7 +45,7 @@ let l = [
 
  
     lista.forEach(function(item){
-       if (item.movimentacao === "deposito")
+      if (item.movimentacao === "deposito")
         totalDeposito += item.valor
       else totalRetirada -= item.valor
         
