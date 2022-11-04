@@ -1,3 +1,4 @@
+// minha solução
 function exibirSeriados (lista, termoDeBusca)  {
     let seriesEncontradas = []; 
     let i = 0;
@@ -22,7 +23,7 @@ function exibirSeriados (lista, termoDeBusca)  {
 
     console.log(exibirSeriados(lista, termoDeBusca));
     
-
+////////////////////////////////
 /*/* SOLUÇÃO 1 */
 let procuraItemEmListaS1 = (lista, valor) => {
     for (var i = 0; i < lista.length; i++)

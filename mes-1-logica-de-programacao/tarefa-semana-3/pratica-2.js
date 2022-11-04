@@ -1,3 +1,4 @@
+//// minha solução
 function exibirImparesde1a17 (n) {
     let i = 1
 
@@ -13,9 +14,9 @@ function exibirImparesde1a17 (n) {
         return undefined
     }
 }
-///////////////////////////////////////////////
-exibirImparesde1a17(17)
 
+exibirImparesde1a17(17)
+/////////////////////////////////////////////// solução 
 let imparesDe1AteN = n => {
     for (let i = 1; i <= n; i +=2)
         console.log(i)

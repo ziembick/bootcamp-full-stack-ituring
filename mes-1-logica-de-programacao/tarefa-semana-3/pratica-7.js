@@ -1,4 +1,4 @@
-//minha
+//minha solução
 const saldoFinal = () => {
     let soma = numeros.reduce(function(soma,i) {
         return  soma + i;
@@ -9,7 +9,7 @@ const saldoFinal = () => {
 let numeros = [100, -20, -30, 10, -7, -21, -5]
 saldoFinal(numeros)
 
-
+///////////////////////////////////////////////////////////
 //solução
 let exibeSaldoFinal = lista => {
     let saldoFinal = 0

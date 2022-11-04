@@ -1,3 +1,4 @@
+///// minha solução
 function exibirSeriados (seriados) {
     for (let [indice, valor] of seriados.entries() ){
         console.log(`[${indice}] ${valor}`)

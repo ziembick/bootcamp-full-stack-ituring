@@ -1,3 +1,4 @@
+// minha solução
 let extrato = (lista) => {
     let finalSaldo = 0
     let depositoTotal = 0
