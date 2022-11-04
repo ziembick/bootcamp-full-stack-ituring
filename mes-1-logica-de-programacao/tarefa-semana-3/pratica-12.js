@@ -1,5 +1,3 @@
-
-
 function geraGruposDe2(lista) {
     const qtdGrupos = Math.floor(lista.length/2);
     let grupos = [];
