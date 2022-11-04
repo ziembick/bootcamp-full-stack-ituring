@@ -7,7 +7,7 @@ function exibirSeriados (seriados) {
 let seriados = ["Breaking Bad", "Game of Thrones", "Stranger Things", "Chernobyl", "Dexter", "The Last Dance", "This is Us"]
 
 exibirSeriados(seriados)
-
+/////////////////////////////////////////////////////////
 
 /* SOLUÇÃO */
 let exibeLista = lista => {
