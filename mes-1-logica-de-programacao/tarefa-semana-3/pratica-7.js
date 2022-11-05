@@ -4,7 +4,7 @@ const saldoFinal = () => {
         return  soma + i;
     })
     const positivoNegativo = soma > 0 ? "positivo" : "negativo"
-    console.log(`O saldo final de sua conta foi ${positivoNegativo} no valor de R$${soma}`)
+    console.log(`O saldo final de sua conta foi ${positivoNegativo} no valor de R$ ${soma}`)
 }
 let numeros = [100, -20, -30, 10, -7, -21, -5]
 saldoFinal(numeros)
