@@ -11,8 +11,6 @@ function pesquisarSerie(lista, termoDeBusca) {
 
 const lista =  ["Breaking Bad", "Game of Thrones", "Stranger Things", "Chernobyl", "Dexter", "The Last Dance", "This is Us"]
 
-const termoDeBusca = "Th"
 
-let seriesEncontradas = pesquisarSerie(lista, termoDeBusca)
+console.log(pesquisarSerie(lista, "Th"))
 
-console.log(seriesEncontradas)
